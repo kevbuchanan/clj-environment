@@ -4,5 +4,5 @@
 
 (defn -main [& args]
   (let [env (environ/env :clj-env)]
-    (log/info (format "Starting the app with %s environment" env))
+    (log/info (format "Starting the app with %s environment" (name env)))
     (println "Hello, World!")))
